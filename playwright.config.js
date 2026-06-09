@@ -38,6 +38,7 @@ export default defineConfig({
     video: 'off',
     screenshot: 'only-on-failure',
     reporter: 'list',
+    locale:'it-IT'
    
   },
 

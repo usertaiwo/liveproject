@@ -9,7 +9,8 @@ test('Login to the application', async ({ page }) => {
     await page.waitForTimeout(3000)
     await loginpage.login('user1.n@yahoo.com', 'Oddy2026')
     await page.waitForTimeout(3000)
-    await loginpage.verifyWelcomePage('user1.n@yahoo.com');
+  await loginpage.verifyWelcomePage('user1.n@yahoo.com');
+  await loginpage.waitForTimeout(3000)
 
       //const welcomeText = page.locator('#nameofuser');
   //await expect(welcomeText).toContainText('Welcome user1.n@yahoo.com1');
