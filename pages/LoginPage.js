@@ -12,10 +12,12 @@ import {expect} from '@playwright/test'
         //this.welcomePage = page.getByRole("heading", { name: 'Welcome user1.n@yahoo.com' });
         // this.welcomePage = page.locator("//a[@id='nameofuser']")
         this.welcomePage = '#nameofuser'
+        this.ahdhhdhd = 'jfjfjfjfj'
         // gttfdddss rr
         //his.log.loginButton = "//button[@onclick='logIn()']"
         //this.loginURL = 'https://www.demoblaze.com/index.html';
         //https://www.demoblaze.com/index.html
+        //jdjdjdj
 
         // NEW COMMENT
 
