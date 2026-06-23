@@ -51,11 +51,12 @@ export default defineConfig({
 				screenshot: 'on',
 				reporter: 'list',
 				
-				trace:'off'
+				trace: 'off'
 
 
-			},
-			name: 'chrome',
+			}
+},
+		{	name: 'chrome',
 			use: {
 				broserName: 'chromium',
 				headless: true,
@@ -64,7 +65,7 @@ export default defineConfig({
 				
 				trace:'on'
 
-			{
+			
 
 			}
 
