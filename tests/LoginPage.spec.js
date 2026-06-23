@@ -2,7 +2,7 @@ import { test} from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage'
 //import { loginpage} from '../pages/LoginPage.js';
 
-test.only('Login to the application', async ({ page }) => {
+test('Login to the application', async ({ page }) => {
 	const loginpage = new LoginPage(page);
 	await loginpage.gotologinPage();
 	await page.waitForTimeout(3000);
