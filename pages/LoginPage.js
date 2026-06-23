@@ -8,7 +8,7 @@ import {expect} from '@playwright/test'
         
         this.userNameInput = page.locator("#loginusername");
 		this.passwordInput = page.locator("#loginpassword");
-		this.loginButton = page.locator("//button1[@onclick='logIn()']");
+		this.loginButton = page.locator("//button[@onclick='logIn()']");
 				//this.welcomePage = page.getByRole("heading", { name: 'Welcome user1.n@yahoo.com' });
 				// this.welcomePage = page.locator("//a[@id='nameofuser']")
 		this.welcomePage = "#nameofuser";
@@ -31,7 +31,7 @@ import {expect} from '@playwright/test'
          
          //await this.page.locator(this.loginLink).click();
          await this.loginLink.click()
-         await this.userNameInput.fill(username);
+         await this.userNameInputi.fill(username);
          await this.passwordInput.fill(password);
        
          await this.loginButton.click();
