@@ -43,6 +43,7 @@ import {expect} from '@playwright/test'
          //let dashPage = expect(this.welcomePage).toHaveText('Welcome user1.n@yahoo.com');
          //console.log(dashPage)
          //await 
+         //await 
 
         // await expect(this.welcomePage).toContainText(username);
          await expect(this.page.locator('#nameofuser1'))
