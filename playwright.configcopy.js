@@ -50,18 +50,20 @@ export default defineConfig({
 				headless: false,
 				screenshot: 'on',
 				reporter: 'list',
-				
-				trace: 'off'
-
+				//viewport:{width:400, height:1280},
+				trace: 'off',
+				...devices['iPhone 14'],
+				video:'on'
 
 			}
 },
 		{	name: 'chrome',
 			use: {
 				broserName: 'chromium',
-				headless: true,
+				headless: false,
 				screenshot: 'only-on-failure',
 				reporter: 'list',
+				...devices['iPhone 7'],
 				
 				trace:'on'
 

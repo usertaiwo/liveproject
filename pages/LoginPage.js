@@ -31,7 +31,7 @@ import {expect} from '@playwright/test'
          
          //await this.page.locator(this.loginLink).click();
          await this.loginLink.click()
-         await this.userNameInputi.fill(username);
+         await this.userNameInput.fill(username);
          await this.passwordInput.fill(password);
        
          await this.loginButton.click();
@@ -42,6 +42,7 @@ import {expect} from '@playwright/test'
          //let welcome = await expect(this.welcomePage).toBeVisible();
          //let dashPage = expect(this.welcomePage).toHaveText('Welcome user1.n@yahoo.com');
          //console.log(dashPage)
+         //await 
 
         // await expect(this.welcomePage).toContainText(username);
          await expect(this.page.locator('#nameofuser1'))
