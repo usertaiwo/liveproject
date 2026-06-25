@@ -44,47 +44,34 @@ export default defineConfig({
 	/* Configure projects for major browsers */
 	projects: [
 		{
-			name: "chromium",
-			use: { ...devices["Desktop Chrome"] },
-		},
+			name: 'Safari',
+			use: {
+				broserName: 'webkit',
+				headless: false,
+				screenshot: 'on',
+				reporter: 'list',
+				//viewport:{width:400, height:1280},
+				trace: 'off',
+				...devices['iPhone 14'],
+				video:'on'
 
-		// {
-		//    name: 'firefox',
-		//    use: { ...devices['Desktop Firefox'] },
-		// },
+			}
+},
+		{	name: 'chrome',
+			use: {
+				broserName: 'chromium',
+				headless: false,
+				screenshot: 'only-on-failure',
+				reporter: 'list',
+				...devices['iPhone 7'],
+				
+				trace:'on'
 
-		// {
-		//    name: 'webkit',
-		//    use: { ...devices['Desktop Safari'] },
-		// },
+			
 
-		/* Test against mobile viewports. */
-		// {
-		//   name: 'Mobile Chrome',
-		//   use: { ...devices['Pixel 5'] },
-		// },
+			}
 
-		{
-			name: "Mobile Safari",
-			use: { ...devices["iPhone 14"] },
-		},
-
-		/* Test against branded browsers. */
-		{
-			name: "Microsoft Edge",
-			use: { ...devices["Desktop Edge"], channel: "msedge" },
-		},
-		// {
-		//   name: 'Google Chrome',
-		//   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-		// },
+		}
 	],
-
-	/* Run your local dev server before starting the tests */
-	// webServer: {
-	//   command: 'npm run start',
-	//   url: 'http://localhost:3000',
-	//   reuseExistingServer: !process.env.CI,
-	// },
 });
 
