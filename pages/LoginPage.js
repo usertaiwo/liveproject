@@ -22,7 +22,9 @@ import {expect} from '@playwright/test'
 
     async gotologinPage() { 
         await this.page.goto('https://www.demoblaze.com/index.html');
-        
+        //await
+        //hhhhh
+        //hhhh
     }
     
  
