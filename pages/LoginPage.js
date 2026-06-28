@@ -31,7 +31,8 @@ import {expect} from '@playwright/test'
      async login(username, password) {
        
          
-         //await this.page.locator(this.loginLink).click();
+         //await this.page.locator(this.loginLink).click(); 
+         //djjdj
          await this.loginLink.click()
          await this.userNameInput.fill(username);
          await this.passwordInput.fill(password);
