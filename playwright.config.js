@@ -37,7 +37,7 @@ export default defineConfig({
 		colorScheme: "light",
 		video: "off",
 		screenshot: "only-on-failure",
-		reporter: "list",
+		reporter: "list","html","github",
 		locale: "es-ES",
 	},
 
